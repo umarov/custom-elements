@@ -4,8 +4,9 @@
   "description": "Custom Elements",
   "main": "src/main.ts",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w --pretty",
+    "build": "webpack --mode development --config webpack.config.js",
+    "watch": "webpack --mode development --config webpack.config.js -w",
+    "build:ghpages": "webpack --mode production --config webpack.config.js -o docs/main.js",
     "lint": "tslint -p . --fix"
   },
   "author": "Muzafar Umarov umarov@gmail.com",

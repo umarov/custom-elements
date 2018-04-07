@@ -8,7 +8,4 @@ export class CustomOption extends HTMLElement {
     `;
     shadow.appendChild(template.content.cloneNode(true));
   }
-
-  public connectedCallback() {
-  }
 }
