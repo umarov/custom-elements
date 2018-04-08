@@ -1,8 +1,14 @@
 <style>
+  :root, #selected, #options {
+    display: inline-block;
+  }
 
+  .hidden {
+    display: none !important;
+  }
 </style>
 
 <div>
-  <p>Yo</p>
-  <slot></slot>
+  <div id="selected"></div>
+  <div id="options" class="hidden"></div>
 </div>
